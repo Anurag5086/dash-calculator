@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="index.css">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+</head>
+<body>
+<center>
+  <h3>Dash Impact Calculator</h3>
+</center>
+  
+    <br>
+    <br>
+  <div class="container">
+    <div class="row">
+      <form class="col s12" id="myform">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="num-outlets" type="text" class="validate">
+            <label for="num-outlets">Number of Outlets</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="apc" type="text" class="validate">
+            <label for="apc">Average Per Customer</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="avg-cust" type="text" class="validate">
+            <label for="avg-cust">Average Number of Customers Per Day</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="rest-covers" type="text" class="validate">
+            <label for="rest-covers">Restaurant Covers</label>
+          </div>
+        </div>
+
+
+    
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="open-service" type="text" class="validate">
+            <label for="open-service">Open For Service</label>
+
+          </div>
+        </div>
+      
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="table-turnaround" type="text" class="validate">
+      <label for="table-turnaround">Table Turnaround During a Day Each Meal</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="operation-days" type="text" class="validate">
+      <label for="operation-days">Restaurant Operational Days In a Year</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="num-waiters" type="text" class="validate">
+      <label for="num-waiters">Number of Waiters</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="refur-ipad" type="text" class="validate">
+      <label for="refur-ipad">Refurbished iPads Devices</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="mis-orders" type="text" class="validate">
+      <label for="mis-orders">Mismatch Orders</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="digi-cost" type="text" class="validate">
+      <label for="digi-cost">Digital Content Units</label>
+    </div>
+  </div>
+
+  
+  <center>
+    <button id="submit"><h6>Calculate</h6></button>
+
+  </center>
+        <div class="row">
+          <div class="col s12">
+            
+            <br>
+            <div class="input-field col l4">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="card-panel">
+                    <span class="black-text">Annual Earnings
+                    </span>
+                    <hr>
+                    <span class="ans" id="earn"></span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="input-field col l4">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="card-panel">
+                    <span class="black-text">Money Saved
+                    </span>
+                    
+                    <hr>
+                    <span class="ans" id="saved"></span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="input-field col l4">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="card-panel">
+                    <span class="black-text net-profit">Net Profit
+                    </span>
+                    <br>
+                    
+                    
+                    <hr>
+                    <span id="profit" class="ans"></span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
